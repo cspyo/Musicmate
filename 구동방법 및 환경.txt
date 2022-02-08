@@ -1,0 +1,20 @@
+구동 방법
+0. JDK, IDE, MySQL 설치
+1. MySQL 실행 후 "SQL_Query.sql" 내용 복사 붙여넣기
+2. "Musicmate" Import
+3. 프로젝트 우클릭  < Properties - Java Build Path - Libraries탭 - Add External JARs > 들어가서 "external_libraries"에 있는 파일 ADD
+4. "Login, MainFrame, PlayListFrame" 클래스의  
+     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/musicmate?serverTimezone=Asia/Seoul&useSSL=false", "root", "487875");
+    "jdbc:mysql://localhost:3306/[데이터베이스명]?serverTimezone=Asia/Seoul&useSSL=false", "[사용자명]", "[설정한 비밀번호]" 로 바꾸기
+5. StartMain 실행
+6. 오류가 있어서 프레임 크기 마우스로 살짝 조정
+
+
+
+개발 환경
+eclipse : 2021-12
+JDK : 8u321
+MySQL : 8.0.28.0
+ConnectorJ : 8.0.28
+JLayout : 1.0.1
+
